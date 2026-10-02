@@ -1,0 +1,25 @@
+{
+  "name": "jazztothetwo.github.io",
+  "version": "1.0.0",
+  "description": "My personal portfolio and project showcase",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jazztothetwo/jazztothetwo.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/jazztothetwo/jazztothetwo.github.io/issues"
+  },
+  "homepage": "https://github.com/jazztothetwo/jazztothetwo.github.io#readme",
+  "dependencies": {
+    "astro": "^7.3.5"
+  }
+}
