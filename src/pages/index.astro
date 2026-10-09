@@ -1,109 +1,132 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Jarrod Scherer's personal website, projects, and hobbies."
-    />
-    <title>Jarrod Scherer</title>
-  </head>
-  <body>
-    <main>
-      <header>
-        <h1>Jarrod Scherer</h1>
-        <p>A home for my programming projects and Warhammer hobby.</p>
-        <a href="https://github.com/jazztothetwo">Find me on GitHub</a>
-      </header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+		name="description"
+		content="Jarrod Scherer's personal website, projects, and hobbies."
+		/>
+		<title>Jarrod Scherer</title>
+	</head>
+	<body>
+		<main>
+		<header>
+			<h1>Jarrod Scherer</h1>
+			<p>A home for my programming projects and Warhammer hobby.</p>
+			<a href="https://github.com/jazztothetwo">Find me on GitHub</a>
+		</header>
 
-      <section>
-        <h2>About</h2>
-        <p>
-          I'm a university student nearing the end of my computer science
-          degree, an avid Warhammer collector, and a hobbyist programmer.
-        </p>
-      </section>
-      <section>
-        <h2>Projects</h2>
-        <p>
-          Right now, my GitHub mostly houses my university projects and reports.
-        </p>
-        <p>
-          One project that might interest you is <a
-            href="https://github.com/jazztothetwo/fly-discourse"
-            >Fly Discourse</a
-          >: I exposed a fruit fly connectome to 50,000 furry discourse posts
-          until it developed opinions. Underneath the joke, it's an experiment
-          passing text embeddings through a simulated neural network based on a
-          fly's wiring, then training a classifier on the resulting activity.
-        </p>
-      </section>
-      <section>
-        <h2>Warhammer</h2>
-        <p>
-          I mainly collect Space Marines in two flavours: a sizeable 40k Dark
-          Angels force and an even larger 30k Sons of Horus force, approaching
-          15,000 points. I also dabble in Imperial Guard, specifically Krieg,
-          and have the customary pile of shame.
-        </p>
-        <p>
-          My future blog will follow my personal journey and experiences in the
-          hobby.
-        </p>
-      </section>
-    </main>
-  </body>
+		<section>
+			<h2>About</h2>
+			<p>
+			I'm a university student nearing the end of my computer science
+			degree, an avid Warhammer collector, and a hobbyist programmer.
+			</p>
+		</section>
+		<div class="content-grid">
+			<section>
+				<h2>Projects</h2>
+				<p>
+				Right now, my GitHub mostly houses my university projects and reports.
+				</p>
+				<p>
+				One project that might interest you is <a
+					href="https://github.com/jazztothetwo/fly-discourse"
+					>Fly Discourse</a
+				>: I exposed a fruit fly connectome to 50,000 furry discourse posts
+				until it developed opinions. Underneath the joke, it's an experiment
+				passing text embeddings through a simulated neural network based on a
+				fly's wiring, then training a classifier on the resulting activity.
+				</p>
+			</section>
+			<section>
+				<h2>Warhammer</h2>
+				<p>
+				I mainly collect Space Marines in two flavours: a sizeable 40k Dark
+				Angels force and an even larger 30k Sons of Horus force, approaching
+				15,000 points. I also dabble in Imperial Guard, specifically Krieg,
+				and have the customary pile of shame.
+				</p>
+				<p>
+				My future blog will follow my personal journey and experiences in the
+				hobby.
+				</p>
+			</section>
+		</div>
+		</main>
+	</body>
 </html>
 
 <style>
-  :global(:root) {
-    --background: #101b2b;
-    --text: #e8edf3;
-    --accent: #9fc5ed;
-    --divider: #34465e;
-  }
-  body {
-    margin: 0;
-    background: var(--background);
-    color: var(--text);
-    font-family: system-ui, sans-serif;
-    line-height: 1.6;
-  }
+	:global(:root) {
+		--background: #101b2b;
+		--text: #e8edf3;
+		--accent: #9fc5ed;
+		--divider: #34465e;
+	}
+	body {
+		margin: 0;
+		background: var(--background);
+		color: var(--text);
+		font-family: system-ui, sans-serif;
+		line-height: 1.6;
+	}
 
-  main {
-    max-width: 48rem;
-    margin-inline: auto;
-    padding: 4rem 1.5rem;
-  }
+	main {
+		max-width: 48rem;
+		margin-inline: auto;
+		padding: 4rem 1.5rem;
+	}
 
-  h1 {
-    margin: 0 0 1rem;
-    font-size: clamp(2.25rem, 6vw, 3.5rem);
-    line-height: 1.1;
-    letter-spacing: -0.025em;
-  }
+	h1 {
+		margin: 0 0 1rem;
+		font-size: clamp(2.25rem, 6vw, 3.5rem);
+		line-height: 1.1;
+		letter-spacing: -0.025em;
+	}
 
-  a {
-    color: var(--accent);
-  }
+	a {
+		color: var(--accent);
+	}
 
-  a:hover {
-    text-decoration-thickness: 2px;
-  }
+	a:hover {
+		text-decoration-thickness: 2px;
+	}
 
-  section {
-    border-top: 1px solid var(--divider);
-    padding-top: 2rem;
-    margin-top: 3rem;
-  }
+	section {
+		border-top: 1px solid var(--divider);
+		padding-top: 2rem;
+		margin-top: 3rem;
+	}
 
-  h2 {
-    margin-bottom: 0.75rem;
-  }
+	h2 {
+		margin-bottom: 0.75rem;
+	}
 
-  p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-  }
-</style>
+	p {
+		margin-top: 0;
+		margin-bottom: 1rem;
+	}
+
+	.content-grid {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 2rem;
+
+		width: min(75rem, calc(100vw - 3rem));
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.content-grid section {
+		min-width: 0;
+	}
+
+	@media (max-width: 700px) {
+		.content-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+	</style>
