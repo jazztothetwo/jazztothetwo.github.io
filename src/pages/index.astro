@@ -12,9 +12,18 @@
 	<body>
 		<main>
 		<header>
-			<h1>Jarrod Scherer</h1>
-			<p>A home for my programming projects and Warhammer hobby.</p>
-			<a href="https://github.com/jazztothetwo">Find me on GitHub</a>
+			<div>
+				<h1>Jarrod Scherer</h1>
+				<p>A home for my programming projects and Warhammer hobby.</p>
+				<a href="https://github.com/jazztothetwo">Find me on GitHub</a>
+			</div>
+			<img
+				class="avatar"
+				src="https://images.jarrodscherer.au/personal/avatar_resized.png"
+				alt="My online avatar: a crowned dragon with blue fur and rainbow markings."
+				width="512"
+				height="512"
+			/>
 		</header>
 
 		<section>
@@ -74,7 +83,7 @@
 	}
 
 	main {
-		max-width: 48rem;
+		max-width: 64rem;
 		margin-inline: auto;
 		padding: 4rem 1.5rem;
 	}
@@ -86,14 +95,14 @@
 		letter-spacing: -0.025em;
 	}
 
-  a {
-    color: var(--accent);
-  }
+	a {
+		color: var(--accent);
+	}
   
-  a:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 4px;
-  }
+	a:focus-visible {
+		outline: 2px solid var(--accent);
+		outline-offset: 4px;
+	}
 
 	a:hover {
 		text-decoration-thickness: 2px;
@@ -118,11 +127,6 @@
 		display: grid;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 		gap: 2rem;
-
-		width: min(75rem, calc(100vw - 3rem));
-		position: relative;
-		left: 50%;
-		transform: translateX(-50%);
 	}
 
 	.content-grid section {
@@ -132,6 +136,30 @@
 	@media (max-width: 700px) {
 		.content-grid {
 			grid-template-columns: 1fr;
+		}
+	}
+
+	header {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) 180px;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	.avatar {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	@media (max-width: 700px) {
+		header {
+			grid-template-columns: 1fr;
+		}
+
+		.avatar {
+			width: 120px;
+			grid-row: 1;
 		}
 	}
 	</style>
